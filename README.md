@@ -1,180 +1,234 @@
-Bank Chatbot System 
+# Bank Chatbot System 
 
-📌 Project Overview
+## 📌 Project Overview
 
-The Bank Chatbot System is a Java-based conversational assistant developed using Visual Studio Code. The chatbot communicates with users through text-based natural language and provides banking-related information such as account types, services, and general assistance.
+The Bank Chatbot System is a Java-based conversational assistant developed using Visual Studio Code. The chatbot interacts with users in natural language and provides banking-related information such as account types, branches, and general assistance.
 
-The system uses a three-tier architecture consisting of:
+The system is designed using a three-tier architecture consisting of a Natural Language Interface, Inference Engine, and Knowledge Base. The chatbot can also learn new responses from user interaction, demonstrating basic artificial intelligence concepts.
 
-Natural Language Interface
-Inference Engine
-Knowledge Base (HashMap and Text Files)
+---
 
-The chatbot also includes a self-learning feature where it can learn new responses from user interaction.
+## 🎯 Objectives
 
-🧠 Main Features
+* To develop a chatbot that communicates with users using natural language.
+* To provide banking-related information automatically.
+* To implement an inference engine to match user questions with answers.
+* To use a knowledge base and text files to store dynamic information.
+* To implement a self-learning feature to train the chatbot.
 
-✅ Natural Language Interface
+---
 
-Text-based chatbot interface
-User can ask questions in normal English
-Bot responds with appropriate answers
+## 🧠 Key Features
 
-✅ Static Knowledge Base (HashMap)
+### 1. Natural Language Interface
 
-Stores predefined questions and answers
-Fast and efficient response retrieval
+* Text-based user interaction through console.
+* Accepts user questions and displays responses.
 
-Example:
+### 2. Static Knowledge Base (HashMap)
 
-User: Hello
-Bot: Hello! nice to meet you!
-
-✅ Dynamic Knowledge Base (Text Files)
-
-Uses text files as database
-
-Files used:
-courses.txt
-branches.txt
-
-Bot reads information dynamically from these files.
+* Uses Java HashMap to store predefined questions and answers.
+* Provides instant responses to known questions.
 
 Example:
 
+```
+User: Good morning
+Chat Bot: Good morning!
+```
+
+---
+
+### 3. Dynamic Knowledge Base (Text Files)
+
+* Uses text files to store updatable banking information.
+* Files used:
+
+  * courses.txt
+  * branches.txt
+
+Example:
+
+```
 User: What courses are available?
-Bot:
+Chat Bot:
 Savings Account
 Current Account
 Fixed Deposit Account
+```
 
-✅ Inference Engine
+---
 
-Uses keyword matching with String.contains()
-Identifies user intent
-Maps question to correct answer
+### 4. Inference Engine
 
-✅ Random Response Generator
-
-Bot gives random responses for some questions.
+* Uses keyword matching with String.contains()
+* Maps different question formats to correct answers.
 
 Example:
 
+```
+User: What accounts do you have?
+User: Tell me available accounts
+Chat Bot gives correct response
+```
+
+---
+
+### 5. Random Response Feature
+
+* Bot generates random responses for certain questions.
+* Implemented using Java Random class.
+
+Example:
+
+```
 User: How are you?
-Bot: I'm fine
-Bot: I am ok
-Bot: Not bad dear
+Chat Bot: I'm fine
+Chat Bot: I am ok
+Chat Bot: Good
+```
 
-Implemented using Java Random class.
+---
 
-✅ Name Memory Feature
+### 6. Remember User Name Feature
 
-Bot remembers user's name.
+* Bot asks and remembers user name.
+* Uses stored name during exit.
+
 Example:
 
+```
 User: What is your name?
-Bot: I'm Robby and your name?
+Chat Bot: I'm Robby and your name?
 User: Himashi
 User: bye
-Bot: Good Bye Himashi
+Chat Bot: Good Bye Himashi
+```
 
-✅ Self-Learning Feature (Training the Bot)
+---
 
-If the bot doesn't know the answer, it asks the user and learns.
+### 7. Self-Learning Feature (Training the Bot)
+
+* If bot does not know the answer, it asks user to teach it.
+* Stores new question and answer in knowledge base.
 
 Example:
 
-User: What is ATM?
-Bot: You tell the answer please
-User: Automated Teller Machine
+```
+User: What is interest rate?
+Chat Bot: You tell the answer please
+User: Interest rate is 10%
+```
 
-Bot stores new knowledge using HashMap.
+---
 
-🏗 System Architecture
+## 🏗 System Architecture
 
-1. Natural Language Interface Layer
+The system follows Three-Tier Architecture:
 
-Handles user input and output
+### 1. Natural Language Interface Layer
 
-2. Inference Engine Layer
+* Handles user input and output.
 
-Processes questions
-Matches keywords
-Retrieves correct answers
+### 2. Inference Engine Layer
 
-3. Knowledge Base Layer
+* Processes user questions.
+* Matches keywords.
+* Retrieves correct answers.
 
-Static knowledge → HashMap
-Dynamic knowledge → Text files
-Learned knowledge → User input
+### 3. Knowledge Base Layer
 
-💻 Technologies Used
+* Static knowledge → HashMap
+* Dynamic knowledge → Text files
+* Learned knowledge → User input
 
-Programming Language: Java
-IDE: Visual Studio Code
-JDK Version: JDK 8 or higher
-Data Structure: HashMap
-File Handling: Text Files
-Version Control: GitHub
+---
 
-📂 Project Structure
+## 💻 Technologies Used
+
+* Programming Language: Java
+* JDK Version: JDK 8 or higher
+* IDE: Visual Studio Code (VS Code)
+* Data Structures: HashMap
+* File Handling: Text Files
+* Version Control: GitHub
+
+---
+
+## 📂 Project Structure
+
+```
 BankChatbot/
 │
 ├── BotV4.java
 ├── courses.txt
 ├── branches.txt
 ├── README.md
+```
 
-▶ How to Run the Project in Visual Studio Code
+---
+
+## ▶ How to Run the Project
 
 Step 1: Install Java JDK
-Step 2: Install Visual Studio Code
-Step 3: Install Java Extension Pack in VS Code
-Step 4: Open Project Folder in VS Code
-Step 5: Open BotV4.java
-Step 6: Click Run button ▶
-Step 7: Start chatting in Terminal
+
+Step 2: Open project folder in Visual Studio Code
+
+Step 3: Make sure these files exist:
+
+* BotV4.java
+* courses.txt
+* branches.txt
+
+Step 4: Compile and run BotV4.java
+
+Step 5: Start chatting with the bot
 
 Example:
-User: Hi
-Bot: Hello!
 
-🎯 Example Questions
+```
+User: Hello
+Chat Bot: Hello!
 
-Hi
-Hello
-How are you?
-What courses are available?
-What branches do you have?
-What is your name?
-Thank you
-bye
+User: What courses are available?
+Chat Bot:
+Savings Account
+Current Account
+Fixed Deposit Account
+```
 
-🤖 Chatbot Capabilities
-Feature	Available
-Static Answers	✅
-Dynamic Answers	✅
-Keyword Matching	✅
-Random Responses	✅
-Name Memory	✅
-Self Learning	✅
+---
 
-🎓 Academic Project Information
+## 🤖 Chatbot Capabilities Summary
 
-This chatbot was developed as part of a university assignment to demonstrate:
-- Chatbot development
-- Natural Language Processing concepts
-- Inference Engine design
-- Knowledge Base implementation
-- Self-learning chatbot system
+| Feature                    | Status |
+| -------------------------- | ------ |
+| Natural Language Interface | ✅      |
+| Static Knowledge Base      | ✅      |
+| Dynamic Knowledge Base     | ✅      |
+| Inference Engine           | ✅      |
+| Random Responses           | ✅      |
+| Name Memory                | ✅      |
+| Self Learning              | ✅      |
 
-👩‍💻 Author
+---
+
+## 🎓 Academic Purpose
+
+This project was developed as an academic assignment to demonstrate chatbot development using Java, natural language processing concepts, inference engines, knowledge bases, and self-learning functionality.
+
+---
+
+## 👩‍💻 Author
 
 Name: Himashi Imanshika
 Project: Bank Chatbot System
-IDE: Visual Studio Code
-Year: 2025
+Version: 4.0
+Developed using: Visual Studio Code
+Year: 2026
 
-📜 License
+---
 
-This project is developed for educational purposes only.
+## 📜 License
+
+This project is for educational purposes only.
