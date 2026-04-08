@@ -44,13 +44,13 @@ Chat Bot: Good morning!
 * Uses text files to store updatable banking information.
 * Files used:
 
-  * courses.txt
-  * branches.txt
+  * personal.txt
+  * current.txt
 
 Example:
 
 ```
-User: What courses are available?
+User: What are the account types?
 Chat Bot:
 Savings Account
 Current Account
