@@ -99,7 +99,7 @@ Example:
 
 ```
 User: What is your name?
-Chat Bot: I'm Robby and your name?
+Chat Bot: I'm Econ and your name?
 User: Himashi
 User: bye
 Chat Bot: Good Bye Himashi
@@ -144,7 +144,7 @@ The system follows Three-Tier Architecture:
 
 ---
 
-## 💻 Technologies Used
+ 💻 Technologies Used
 
 * Programming Language: Java
 * JDK Version: JDK 8 or higher
@@ -155,7 +155,7 @@ The system follows Three-Tier Architecture:
 
 ---
 
-## 📂 Project Structure
+ 📂 Project Structure
 
 ```
 BankChatbot/
@@ -168,7 +168,7 @@ BankChatbot/
 
 ---
 
-## ▶ How to Run the Project
+ ▶ How to Run the Project
 
 Step 1: Install Java JDK
 
@@ -199,7 +199,7 @@ Fixed Deposit Account
 
 ---
 
-## 🤖 Chatbot Capabilities Summary
+ 🤖 Chatbot Capabilities Summary
 
 | Feature                    | Status |
 | -------------------------- | ------ |
@@ -213,13 +213,13 @@ Fixed Deposit Account
 
 ---
 
-## 🎓 Academic Purpose
+ 🎓 Academic Purpose
 
 This project was developed as an academic assignment to demonstrate chatbot development using Java, natural language processing concepts, inference engines, knowledge bases, and self-learning functionality.
 
 ---
 
-## 👩‍💻 Author
+ 👩‍💻 Author
 
 Name: Himashi Imanshika
 Project: Bank Chatbot System
@@ -229,6 +229,6 @@ Year: 2026
 
 ---
 
-## 📜 License
+ 📜 License
 
 This project is for educational purposes only.
