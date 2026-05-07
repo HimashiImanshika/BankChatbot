@@ -190,7 +190,7 @@ Example:
 User: Hello
 Chat Bot: Hello!
 
-User: What courses are available?
+User: What account types are available?
 Chat Bot:
 Savings Account
 Current Account
